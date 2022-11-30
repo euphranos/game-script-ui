@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.body {
+  padding: 70px;
+  position: absolute;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+  background: rgb(179, 58, 180);
+  background: linear-gradient(
+      345deg,
+      rgba(238, 13, 238, 0.267) 0%,
+      rgba(124, 180, 177, 0) 50%,
+      rgba(252, 69, 243, 0.356) 100%
+    ),
+    url(images/Screenshot_5.png);
+  height: 100%;
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.315),
+    rgba(0, 0, 0, 0.329)
+  ); */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 60vh;
+  background-color: rgba(8, 8, 8, 0.747);
+  width: 100%;
+  display: flex;
+}
+
+.bottom {
+  height: 30vh;
+  background-color: rgba(8, 8, 8, 0.747);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left {
+  width: 25%;
+  height: 60vh;
+  margin-right: 20px;
+  background-image: url(images/test.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(8, 8, 8, 0.747);
+}
+
+.middle {
+  width: 25%;
+  height: 52vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.right {
+  width: 50%;
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.yellow-button {
+  height: 20%;
+  width: 100%;
+
+  background-image: linear-gradient(
+    to top,
+    rgba(110, 110, 24, 0.301),
+    rgba(179, 157, 29, 0.274)
+  );
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  border: 1px solid rgba(255, 217, 0, 0.384);
+  border-radius: 5px;
+}
+
+.black-button {
+  height: 20%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: linear-gradient(
+    to top,
+    rgba(39, 39, 36, 0.678),
+    rgba(51, 51, 50, 0.637)
+  );
+  border: 1px solid rgba(225, 255, 0, 0.199);
+  border-radius: 5px;
+}
+
+.yellow-text {
+  color: rgba(228, 178, 15, 0.911);
+  margin-right: 5px;
+  font-weight: 900;
+}
+
+.white-text {
+  color: rgba(250, 249, 242, 0.788);
+  margin-right: 5px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.right-top {
+  height: 10%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-bottom {
+  height: 10%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-middle {
+  height: 80%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.progress {
+  width: 90%;
+
+  background-color: rgba(255, 166, 0, 0.205);
+  height: 10%;
+  border-radius: 30px;
+}
+
+.deneme {
+  width: 60%;
+
+  background-color: orange;
+  height: 40%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.right-middle-top {
+  height: 50%;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-middle-bottom {
+  height: 50%;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-container {
+  height: 80%;
+  width: 20%;
+
+  background-image: linear-gradient(to bottom, #181818, rgba(0, 0, 0, 0.425));
+  border-radius: 5px;
+  border: 1px solid rgba(191, 194, 199, 0.747);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bottom-top {
+  height: 40%;
+  width: 95%;
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-bottom {
+  height: 40%;
+  width: 95%;
+  background-color: aqua;
+  margin-bottom: 20px;
+}
+
+.black-bottom-button {
+  height: 100%;
+  width: 24%;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+
+  background-image: linear-gradient(
+    to top,
+    rgba(39, 39, 36, 0.322),
+    rgba(51, 51, 50, 0.637)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.money-image {
+  height: 50%;
+  width: 80%;
+  background-image: url(images/money2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.weapon1 {
+  width: 30%;
+  height: 50px;
+  background-image: url(images/c.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weapon2 {
+  width: 70%;
+  height: 100px;
+  background-image: url(images/weapon_carbinerifle.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weapon3 {
+  width: 70%;
+  height: 100px;
+  background-image: url(images/weapon_compactrifle.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weapon4 {
+  width: 70%;
+  height: 100px;
+  background-image: url(images/weapon_microsmg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weapon5 {
+  width: 70%;
+  height: 100px;
+  background-image: url(images/weapon_minismg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weapon6 {
+  width: 70%;
+  height: 100px;
+  background-image: url(images/weapon_pistol.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weapon7 {
+  width: 70%;
+  height: 100px;
+  background-image: url(images/weapon_pistol_mk2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weapon8 {
+  width: 70%;
+  height: 100px;
+  background-image: url(images/weapon_assaultrifle.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
